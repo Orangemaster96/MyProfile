@@ -1,0 +1,16 @@
+[
+    {
+        "university":"Lone Star College",
+        "degree":"Associates of Arts",
+        "attended":"18 - 22",
+        "status":"Graduated",
+        "focus":"Information Technology and Business"
+    },
+    {
+        "university":"Western Governors University",
+        "degree":"Bachelors of Science",
+        "attended":"23 - Present",
+        "status":"In Progress",
+        "focus":"Software Engineering"
+    }
+]

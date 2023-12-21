@@ -1,11 +1,12 @@
 html{
     font-family: helvetica;
     padding:0px;
+    height:100%;
 }
 body{
     padding:0px;
     margin: 0px;
-    height:auto;
+    height:100%;
 }
 .mainpagepara{
     font-size: 12pt;
@@ -19,7 +20,7 @@ body{
 .bannerTitle{
     font-family:'Courier New', Courier, monospace;
     display:flex;
-    
+    font-size: 40pt;
     
 }
 .menu{
@@ -27,11 +28,12 @@ body{
     display:flex;
     width:100%;
     justify-content:right;
-    
-    /*margin: 10px, 10px 10px 10px;*/
+    border-width: 0px 0px 1px 0px;
+    border-color: lightgray;
+    border-style: solid;
 }
 .menuItem{
-    
+    color:black;
     font-size: 10pt ;
     border:none;
     padding:5px;
@@ -49,39 +51,110 @@ body{
     background-color: lightgrey;
 }
 .bannerBkImg{
-    height:90%;
+    
     display:flex;
     flex-direction: column;
     justify-content:center;
-    width:45%;
+    width:50%;
     font-weight: 700;
 }
 .bkimg{
-    height:stretch;
+    
     display:flex;
     flex-direction: row;
     margin:3px;
+    height: 60%;
 }
 .minipara{
     display:flex;
     flex-direction: column;
     width:50%;
-    top:50%;
-    left:50%;
+    justify-content:center;
     
 }
 @media only screen and (max-width: 750px){
     .bkimg{
         flex-wrap: wrap;
+        
     }
     .bannerBkImg{
-        width:100%
+        width:100%;
+       height:200px;
+       
     }
     .minipara{
         width:100%
     }
     div, p{
-        justify-content: center;
+        justify-content: center !important;
         text-align: center !important;
     }
+    .bannerTitle{
+        font-size: 18pt;
+    }
 }
+
+#mario {
+    width:58px;
+    height:100px;
+    border:0px solid #000;
+    background-image:url(https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/mario-sprite.png);
+  }
+  
+  .big {
+    image-rendering:pixelated;
+    position:relative;
+    top:-50px;
+  }
+  
+  /* walking animation */
+  @keyframes walk {
+    0% { background-position:0 0 }
+    100% { background-position:120px 0 }
+  }
+  @keyframes jumping{
+    0%{
+        position: relative;
+        top:-25px;
+        background-position:120px 0;
+        }
+    25%{
+        position: relative;
+        top:-50px;
+        
+    }
+    50%{
+        position: relative;
+        
+        top:-70px;
+    }
+    75%{
+        position: relative;
+        top:-50px;
+        
+    }
+    100%{
+        position: relative;
+        top:-25px;
+        } 
+  }
+  
+  /* actvate animation */
+  .caminar {
+    animation:walk .25s steps(2) infinite forwards;
+  }
+  .jump{
+    animation:jumping .3s steps(2) ;
+    
+  }
+  a{
+    text-decoration: none;
+  }
+  .jobEntry{
+    display:flex;
+    flex-direction: column;
+    border:solid;
+    border-color: lightgray;
+    border-width: 1px;
+    
+  }
