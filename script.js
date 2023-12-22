@@ -101,7 +101,8 @@ async function getResume(){
         const para = document.createElement("div")
         para.setAttribute("class", "jobEntry")
         para.innerHTML = "<div style='font-weight:800;'>"+titlevar+"</div>"+"<div>"+companyvar+"</div>"+"<div>"+datesvar+"</div>"+"<p>"+descriptionvar+"</p>"
-        document.body.appendChild(para)
+        var parent = document.getElementById("jobHistory")
+        parent.appendChild(para)
         console.log(i)
     }
 }
@@ -118,8 +119,56 @@ async function getEduca(){
         const focus = data[i].focus
         const para = document.createElement("div")
         para.setAttribute("class", "jobEntry")
-        para.innerHTML = "<div style='font-weight:800;'>"+university+"</div>"+"<div>"+degree+"</div>"+"<div>"+attended+"</div>"+"<p>"+status+"</p>"+"<p>"+focus+"</p>"
-        document.body.appendChild(para)
+        para.innerHTML = "<div style='font-weight:800;'>"+university+"</div>"+"<div>"+degree+"</div>"+"<div>"+attended+"</div>"+"<div>"+focus+"</div>"+"<p>"+status+"</p>"
+        var parent = document.getElementById("education")
+        parent.appendChild(para)
+        console.log(i)
+    }
+}
+async function getSkills(){
+    const file =  await fetch('./skills.json')
+    const data =  await file.json()
+    console.log(data)
+    
+    for( i in data){
+        const para = document.createElement("div")
+        para.setAttribute("class", "jobEntry")
+        var counter = 0
+
+        for(f in data[i]){
+
+            if(counter == 0){
+            para.innerHTML += "<div style='font-weight:800;'>"+data[i][f]+"</div>"
+            }
+
+             if(counter >=1){
+
+                for(h in data[i][f]){
+                    para.innerHTML += "<div>"+data[i][f][h]+"</div>"
+                }
+            }
+            counter+= 1
+        }
+        var parent = document.getElementById("skills")
+        parent.appendChild(para)
+    }
+}
+async function getProjects(){
+    const file =  await fetch('./projects.json')
+    const data =  await file.json()
+    console.log(data)
+
+    for( i in data){
+        const university = data[i].university
+        const degree = data[i].degree
+        const attended = data[i].attended
+        const status = data[i].status
+        const focus = data[i].focus
+        const para = document.createElement("div")
+        para.setAttribute("class", "jobEntry")
+        para.innerHTML = "<div style='font-weight:800;'>"+university+"</div>"+"<div>"+degree+"</div>"+"<div>"+attended+"</div>"+"<div>"+focus+"</div>"+"<p>"+status+"</p>"
+        var parent = document.getElementById("education")
+        parent.appendChild(para)
         console.log(i)
     }
 }

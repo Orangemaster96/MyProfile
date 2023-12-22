@@ -158,3 +158,17 @@ body{
     border-width: 1px;
     
   }
+  .skills{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skills .jobEntry{
+    width: 26%;
+    border:none;
+    margin:3px;
+  }
+  .subheading{
+    font-weight: 800;
+    text-align: center;
+  }

@@ -1,0 +1,28 @@
+[
+    {
+        "category":"Development Languages and Technologies",
+        "skills":["JavaScript","HTML", "CSS", "Python", ".Net", "VBS", "C#", "Angular", "ASP.Net", "Wordpress", "Wix API"]
+    },
+    {
+        "category":"Data Management Technologies and Languages",
+        "skills":["T-SQL","SSRS Reports", "SSMS","Web Reports","PowerBI", "MySQL","BigQuery","Stored Procedures", "Cursors"]
+    },
+    {
+        "category":"Industrial Automation/Control Systems Technology",
+        "skills":["Inductive Automation","SCADA", "Data Collection"]
+    },
+    {
+        "category":"Certifications",
+        "skills":["Ignition Core Certification","Ignition Gold Certification", "Amazon Web Services Cloud Practitioner", "CompTIA A+ Certification"]
+    },
+    {
+        "category":"Graphic Design",
+        "skills":["Adobe Photoshop","Adobe Illustrator", "Figma", ""]
+    },
+    {
+        "category":"Software Suites",
+        "skills":["Microsoft Office Suite","Adobe", "Visual Studio", ""]
+    }
+    
+
+]

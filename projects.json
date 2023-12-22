@@ -1,0 +1,73 @@
+[
+        {
+            "project":"Intranet ASP.Net pages on IIS Server",
+            "skill":["ASP.Net", "HTML", "CSS", "VBS", "SQL", "JavaScript"],
+            "descriptoion":""
+        },
+        {
+            "project":"ASP.Net Web Reports",
+            "skill":["ASP.Net", "HTML", "CSS", "VBS", "SQL", "JavaScript", "TeeChart Library"],
+            "descriptoion":""
+        },
+        {
+            "project":"ASP.Net Data Entry Pages",
+            "skill":["ASP.Net", "HTML", "CSS", "VBS", "SQL", "JavaScript"],
+            "descriptoion":""
+        },
+        {
+            "project":"Interactive Angular Website",
+            "skill":["HTML", "CSS", "Angular", "JavaScript", "HTTP Client", "API", "SVG"],
+            "descriptoion":"An interactive clickable world map SVG page that pulled country data from an external web API when selecting a country."
+        },
+        {
+            "project":"Front End Portfolio Site (This Website)",
+            "skill":["HTML", "CSS", "JSON", "JavaScript", "JQuery"],
+            "descriptoion":"Just a Front end Website I use to represent me and my work."
+        },
+        {
+            "project":"Industrial Controls Screens",
+            "skill":["Inductive automation Ignition Vision", "Python", "Scripting"],
+            "descriptoion":""
+        },
+        {
+            "project":"Industrial Data Entry Screens",
+            "skill":["Inductive automation Ignition Vision", "Python", "Scripting", "SQL"],
+            "descriptoion":""
+        },
+        {
+            "project":"Industrial Trends/Graph Screens",
+            "skill":["Inductive automation Ignition Vision", "Python", "Scripting", "SQL"],
+            "descriptoion":""
+        },
+        {
+            "project":"Delivery Web/Mobile App",
+            "skill":["Inductive automation Ignition Perspective", "Python", "Scripting", "SQL"],
+            "descriptoion":""
+        },
+        {
+            "project":"Excel Macros",
+            "skill":["VBA"],
+            "descriptoion":"Created many custom Excel Macros"
+        },
+        {
+            "project":"Wordpress Websites",
+            "skill":["Elementor", "CSS"],
+            "descriptoion":"Created many basic front end websites for clients in Wordpress"
+        },
+        {
+            "project":"Wix Websites",
+            "skill":["JavaScript"],
+            "descriptoion":"Created many basic front end websites for clients in Wix"
+        },
+        {
+            "project":"Wix Custom CRM",
+            "skill":["Wix API", "JavaScript", "Wix DB"],
+            "descriptoion":"A website that had CRM functions including data entry and customer pipeline management all built using the Wix API, Wix database and JavaScript"
+        },
+        {
+            "project":"Wix Custom Marketplace",
+            "skill":["Wix API", "JavaScript", "Wix DB"],
+            "descriptoion":"A website that funtioned as a marketplace where website members could log-in and create listings others could see, it included custom payment processing and access for the website owner to approve listings"
+        }
+        
+]
