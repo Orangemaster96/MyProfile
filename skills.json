@@ -1,7 +1,7 @@
 [
     {
         "category":"Development Languages and Technologies",
-        "skills":["JavaScript","HTML", "CSS", "Python", ".Net", "VBS", "C#", "Angular", "ASP.Net", "Wordpress", "Wix API"]
+        "skills":["JavaScript","HTML", "CSS", "Python", ".Net", "VB.Net", "C#", "Angular", "ASP.Net", "Wordpress", "Wix API"]
     },
     {
         "category":"Data Management Technologies and Languages",
@@ -9,7 +9,7 @@
     },
     {
         "category":"Industrial Automation/Control Systems Technology",
-        "skills":["Inductive Automation","SCADA", "Data Collection"]
+        "skills":["Ignition by Inductive Automation","SCADA", "Data Collection"]
     },
     {
         "category":"Certifications",

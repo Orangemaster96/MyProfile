@@ -2,18 +2,52 @@
    "title":"Developer/Programmer Analyst I",
     "company":"Boise Cascade Wood Products",
     "dates":"01/23 - Present",
-    "description":"Developer Duties like writing this code"
+    "description":["Maintain, integrate and implement (internal and 3rd-party) software applications within the organization.",
+    "Work with users to support business applications and define system solutions that are consistent with business strategies and interface with existing (internal and external) processes and systems",
+    "Define system project scope, and coordinate with corporate IT infrastructure teams on operating system software, database management(SSMS, T-SQL), and data networks.",
+    "Write program specifications for code creation and/or modification.",
+    "Prepare technical documentation, user guides, and provide end-user software training.",
+    "Design, code, configure, test, debug, and performance tune software applications and computer programs.(HTML, JavaScript, CSS, Python, VB.Net, C#, ASP.Net)",
+    "Ensure proper controls and quality assurance is maintained over test and production systems and software source code.",
+    "Provide vendor management for 3rd-party software, track software issues, review software enhancement requests, coordinate and implement software release upgrades and patches.",
+    "Provide project management for IT-related projects that cross over several businesses or application systems.",
+    "Demonstrate strong commitment to safety, quality, environmental awareness, and continuous process improvement."
+]
 },
 {
     "title":"Senior Help Desk Analyst",
     "company":"Citation Oil & Gas",
     "dates":"10/19 - 01/23",
-    "description":"Help Desk Duties"
+    "description":["Support 600 local and remote users",
+    "Built and maintained custom Windows images",
+    "Developed custom scripts (PowerShell, Batch) for post-image configuration",
+    "Heavy use of Active Directory, Exchange admin, and Microsoft 365 admin",
+    "Computer hardware repair",
+    "Support all desktop software, license, and implementation over the business network",
+    "Use Visual Studio, SSMS, MySQL, and VS Code to write Python and SQL to gather and analyze data",
+    "Use VBS to digitize forms with PowerApps",
+    "Deployed Two-Factor Authentication system",
+    "Assisted project team in implementing Field data capture software across multiple regions",
+    "Develop training and train employees",
+    "Asset procurement and inventory management",
+    "Network printer configuration and deployment"
+]
+},
+{
+    "title":"Technical Co-Founder",
+    "company":"Intrepid Media",
+    "dates":"01/22 - 01/23",
+    "description":["Develop Web Applications for clients and internal use using JavaScript, CSS, HTML, and SQL",
+    "Spearhead Technical research and development",
+    "Front End development",
+    "Manage finances and Tax obligations",
+    "Use data analysis to drive company decisions"
+]
 },
 {
     "title":"Desktop Support Analyst",
     "company":"Randstad Contract with Chevron Phillips Chemical",
     "dates":"06/18 - 10/19",
-    "description":"Help Desk Duties"
+    "description":[]
 }
 ]

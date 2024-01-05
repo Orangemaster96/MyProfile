@@ -37,7 +37,7 @@ function updateElement(element, incx, incy) {
 
 // keydown
 function keyDown(e, player) {
-  console.log(e)
+  //console.log(e)
   //var player = document.getElementById('mario')
   var speed = 10;
   //var speed = (e.ctrlKey ? 20 : 10)
@@ -72,7 +72,7 @@ function keyDown(e, player) {
 
 // keyup
 function keyUp(e, player){
-    console.log(e)
+    //console.log(e)
   // remove class to stop animation
   //var player = document.getElementById('mario')
   player.classList.remove('caminar')
@@ -91,7 +91,7 @@ $(document).ready(function(){
 async function getResume(){
     const file =  await fetch('./jobhistory.json')
     const data =  await file.json()
-    console.log(data)
+    //console.log(data)
 
     for( i in data){
         const titlevar = data[i].title
@@ -100,16 +100,25 @@ async function getResume(){
         const descriptionvar = data[i].description
         const para = document.createElement("div")
         para.setAttribute("class", "jobEntry")
-        para.innerHTML = "<div style='font-weight:800;'>"+titlevar+"</div>"+"<div>"+companyvar+"</div>"+"<div>"+datesvar+"</div>"+"<p>"+descriptionvar+"</p>"
+        para.innerHTML = "<div style='font-weight:800;'>"+titlevar+"</div>"+"<div>"+companyvar+"</div>"+"<div>"+datesvar+"</div><br><div id='desc"+i+"'></div><br>"
         var parent = document.getElementById("jobHistory")
         parent.appendChild(para)
-        console.log(i)
+        for(p in data[i].description){
+          const bullet = data[i].description[p]
+          const para2 = document.createElement("div")
+          para2.setAttribute("class", "bullet")
+          console.log(para2)
+          var parent2 = document.getElementById("desc"+i)
+          para2.innerHTML = "<div> &#8594; </div><div>"+bullet +"</div>"
+          parent2.appendChild(para2)
+        }
+        //console.log(i)
     }
 }
 async function getEduca(){
     const file =  await fetch('./education.json')
     const data =  await file.json()
-    console.log(data)
+    //console.log(data)
 
     for( i in data){
         const university = data[i].university
@@ -122,7 +131,7 @@ async function getEduca(){
         para.innerHTML = "<div style='font-weight:800;'>"+university+"</div>"+"<div>"+degree+"</div>"+"<div>"+attended+"</div>"+"<div>"+focus+"</div>"+"<p>"+status+"</p>"
         var parent = document.getElementById("education")
         parent.appendChild(para)
-        console.log(i)
+        //console.log(i)
     }
 }
 async function getSkills(){
@@ -156,19 +165,26 @@ async function getSkills(){
 async function getProjects(){
     const file =  await fetch('./projects.json')
     const data =  await file.json()
-    console.log(data)
+    //console.log(data)
 
     for( i in data){
-        const university = data[i].university
-        const degree = data[i].degree
-        const attended = data[i].attended
-        const status = data[i].status
-        const focus = data[i].focus
+        const project = data[i].project
+        const skill = data[i].skill
+        const description = data[i].description
+        
         const para = document.createElement("div")
         para.setAttribute("class", "jobEntry")
-        para.innerHTML = "<div style='font-weight:800;'>"+university+"</div>"+"<div>"+degree+"</div>"+"<div>"+attended+"</div>"+"<div>"+focus+"</div>"+"<p>"+status+"</p>"
-        var parent = document.getElementById("education")
+        para.innerHTML = "<div style='font-weight:800;'>"+project+"</div>"+"<div>"+skill+"</div>"+"<p>"+description+"</p>"
+        var parent = document.getElementById("projects")
         parent.appendChild(para)
-        console.log(i)
+        //console.log(i)
     }
+}
+function projectbtn(){
+  var projectsection = document.getElementById("projectSection")
+  if(projectsection.hasAttribute("style")){
+      projectsection.removeAttribute("style")
+    }else{
+      projectsection.setAttribute("style", "display: None;")
+  }
 }
