@@ -87,7 +87,7 @@ $(document).ready(function(){
 
   }); 
 
-//resume section
+//resume page section
 async function getResume(){
     const file =  await fetch('./jobhistory.json')
     const data =  await file.json()
