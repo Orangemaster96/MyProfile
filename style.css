@@ -9,6 +9,7 @@ body{
     margin: 0px;
     height:100%;
     align-items: center;
+    
 }
 .mainpagepara{
     font-size: 12pt;
@@ -194,4 +195,7 @@ body{
   .bullet{
     display:flex;
     flex-direction: row;
+  }
+  #instr {
+    text-align: center;
   }
